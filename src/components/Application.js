@@ -11,8 +11,12 @@ import {
 import useApplicationData from "hooks/useApplicationData";
 
 export default function Application(props) {
-  const { state, setDay, bookInterview, cancelInterview } =
-    useApplicationData();
+  const {
+    state,
+    setDay,
+    bookInterview,
+    cancelInterview
+  } = useApplicationData();
 
   const appointments = getAppointmentsForDay(state, state.day);
   const interviewers = getInterviewersForDay(state, state.day);
@@ -29,14 +33,14 @@ export default function Application(props) {
         interviewers={interviewers}
         bookInterview={bookInterview}
         cancelInterview={cancelInterview}
-      />
+        />
     );
   });
 
   return (
     <main className="layout">
       <section className="sidebar">
-        <img
+      <img
           className="sidebar--centered"
           src="images/logo.png"
           alt="Interview Scheduler"
@@ -52,7 +56,7 @@ export default function Application(props) {
         />{" "}
       </section>
       <section className="schedule">
-        {schedule}
+      {schedule}
         <Appointment key="last" time="5pm" />
       </section>
     </main>

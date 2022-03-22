@@ -14,6 +14,11 @@ Go to http://localhost:8000/ in your browser and book an interview.
 
 Install dependencies with `npm install`.
 
+## Screenshots
+![image](https://user-images.githubusercontent.com/94014416/159563400-fc0e498a-3e55-48c9-930c-447b771a2830.png)
+![image](https://user-images.githubusercontent.com/94014416/159563450-d3c568a2-b9b4-46f7-8603-bcd809d287ae.png)
+
+
 ## Running Webpack Development Server
 
 ```sh
